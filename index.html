@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UpdateWise: Understanding the Impact of Software Updates</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <div class="container flex-between">
+        <a href="#" class="logo" onclick="loadPage('home')"
+          >Update<span>Wise</span></a
+        >
+
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link" onclick="loadPage('home')">Home</a>
+          </li>
+          <li class="nav-item dropdown" id="updates-dropdown">
+            <a href="#" class="nav-link">Understanding Updates</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  href="#"
+                  class="dropdown-item"
+                  onclick="loadPage('update-types')"
+                  >Types of Updates</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="dropdown-item"
+                  onclick="loadPage('update-cycle')"
+                  >The Update Cycle</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown" id="impact-dropdown">
+            <a href="#" class="nav-link">User Impact</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  href="#"
+                  class="dropdown-item"
+                  onclick="loadPage('update-fatigue')"
+                  >Update Fatigue</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="dropdown-item"
+                  onclick="loadPage('case-studies')"
+                  >Real-World Examples</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown" id="solutions-dropdown">
+            <a href="#" class="nav-link">Better Solutions</a>
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  href="#"
+                  class="dropdown-item"
+                  onclick="loadPage('best-practices')"
+                  >UX Best Practices</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="dropdown-item"
+                  onclick="loadPage('user-control')"
+                  >Empowering Users</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link" onclick="loadPage('about')">About</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Home Page -->
+      <section id="home" class="page-content">
+        <div class="hero">
+          <div class="container">
+            <div class="hero-content fade-in">
+              <h1>The Impact of Software Updates on User Experience</h1>
+              <p>
+                Software updates are necessary, but when they're frequent or
+                poorly communicated, they harm the user experience and digital
+                well-being.
+              </p>
+              <div class="flex" style="gap: 1rem">
+                <a
+                  href="#"
+                  class="btn btn-primary"
+                  onclick="loadPage('update-types')"
+                  >Learn More</a
+                >
+                <a href="#" class="btn btn-outline" onclick="openSurveyModal()"
+                  >Take Our Survey</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="container">
+            <div class="section-title fade-in">
+              <h2>The Problem with Software Updates</h2>
+              <p>Understanding the hidden costs of constant change</p>
+            </div>
+            <div class="cards-container">
+              <div class="card fade-in">
+                <div class="card-icon"><i class="fas fa-bell"></i></div>
+                <div class="card-content">
+                  <h3 class="card-title">Update Fatigue</h3>
+                  <p class="card-text">
+                    Constant notifications and interruptions lead to decreased
+                    productivity and increased stress levels.
+                  </p>
+                  <a href="#" class="btn" onclick="loadPage('update-fatigue')"
+                    >Learn More</a
+                  >
+                </div>
+              </div>
+              <div class="card fade-in">
+                <div class="card-icon"><i class="fas fa-desktop"></i></div>
+                <div class="card-content">
+                  <h3 class="card-title">Interface Changes</h3>
+                  <p class="card-text">
+                    Abrupt UI changes force users to relearn navigation, causing
+                    frustration and workflow disruption.
+                  </p>
+                  <a href="#" class="btn" onclick="loadPage('case-studies')"
+                    >See Examples</a
+                  >
+                </div>
+              </div>
+              <div class="card fade-in">
+                <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+                <div class="card-content">
+                  <h3 class="card-title">Better Practices</h3>
+                  <p class="card-text">
+                    How developers can improve update processes to maintain
+                    security while respecting user experience.
+                  </p>
+                  <a href="#" class="btn" onclick="loadPage('best-practices')"
+                    >Explore Solutions</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section section-colored">
+          <div class="container">
+            <div class="section-title fade-in">
+              <h2>Key Statistics</h2>
+              <p>The numbers behind update frustration</p>
+            </div>
+            <div class="stats">
+              <div class="stat fade-in">
+                <div class="stat-number">88%</div>
+                <div class="stat-text">
+                  of users won't return to a site after a bad user experience
+                </div>
+                <div class="citation">
+                  Source:
+                  <a
+                    href="https://truelist.co/blog/ux-statistics/"
+                    target="_blank"
+                    >TrueList, 2025</a
+                  >
+                </div>
+              </div>
+              <div class="stat fade-in">
+                <div class="stat-number">53%</div>
+                <div class="stat-text">
+                  of mobile users abandon sites that take over 3 seconds to load
+                </div>
+                <div class="citation">
+                  Source:
+                  <a
+                    href="https://designtlc.com/the-importance-of-user-experience-key-statistics-for-2024/"
+                    target="_blank"
+                    >Design TLC, 2024</a
+                  >
+                </div>
+              </div>
+              <div class="stat fade-in">
+                <div class="stat-number">24%</div>
+                <div class="stat-text">
+                  of Android apps are uninstalled within one day after download
+                </div>
+                <div class="citation">
+                  Source:
+                  <a
+                    href="https://uxcam.com/blog/ux-statistics/"
+                    target="_blank"
+                    >UXCam, 2024</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="container">
+            <div class="section-title fade-in">
+              <h2>Recent Update Issues</h2>
+              <p>Visual examples of problematic software updates</p>
+            </div>
+
+            <div class="case-studies-container fade-in">
+              <div class="case-study">
+                <div class="case-icon"><i class="fab fa-windows"></i></div>
+                <div class="case-content">
+                  <h3>Windows 11 Hardware Requirements</h3>
+                  <p>
+                    Microsoft's Windows 11 introduced strict hardware
+                    requirements that left many relatively recent computers
+                    unable to upgrade officially, creating confusion and
+                    frustration.
+                  </p>
+                  <div class="citation">
+                    Source:
+                    <a
+                      href="https://www.windowscentral.com/software-apps/windows-11/these-pcs-can-finally-upgrade-to-the-latest-version-of-windows-11"
+                      target="_blank"
+                      >Windows Central, April 2025</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-study">
+                <div class="case-icon"><i class="fab fa-apple"></i></div>
+                <div class="case-content">
+                  <h3>iOS 13 and macOS Catalina</h3>
+                  <p>
+                    Apple's simultaneous release of iOS 13 and macOS Catalina in
+                    2019 was widely criticized for bugs and compatibility
+                    problems, damaging Apple's "it just works" reputation.
+                  </p>
+                  <div class="citation">
+                    Source:
+                    <a
+                      href="https://www.inc.com/jason-aten/apples-2-most-recent-software-updates-are-a-mess-its-a-real-problem-for-a-company-known-for-it-just-works.html"
+                      target="_blank"
+                      >Inc.com, January 2021</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="case-study">
+                <div class="case-icon">
+                  <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <div class="case-content">
+                  <h3>Windows 11 KB5053656 Update</h3>
+                  <p>
+                    The March 2025 Windows 11 Cumulative Update caused issues
+                    with the OpenSSH service and prevented installation on
+                    devices with certain Citrix components.
+                  </p>
+                  <div class="citation">
+                    Source:
+                    <a
+                      href="https://www.computerworld.com/article/1615662/windows-11-a-guide-to-the-updates.html"
+                      target="_blank"
+                      >Computerworld, April 2025</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Update Types Page -->
+      <section id="update-types" class="page-content" style="display: none">
+        <div class="section">
+          <div class="container">
+            <div class="section-title fade-in">
+              <h2>Types of Software Updates</h2>
+              <p>Understanding the different categories and their impacts</p>
+            </div>
+
+            <div class="content fade-in">
+              <p>
+                Software updates come in various forms, each with different
+                purposes, frequencies, and impacts on user experience.
+                Understanding these distinctions helps users make informed
+                decisions about when and how to update their software.
+              </p>
+
+              <div class="features">
+                <div class="feature fade-in">
+                  <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                  </div>
+                  <h3 class="feature-title">Security Patches</h3>
+                  <p class="card-text">
+                    Target specific security vulnerabilities. Usually small in
+                    size and focused on protecting against specific threats.
+                  </p>
+                </div>
+                <div class="feature fade-in">
+                  <div class="feature-icon"><i class="fas fa-bug"></i></div>
+                  <h3 class="feature-title">Bug Fixes</h3>
+                  <p class="card-text">
+                    Address specific errors, crashes, or malfunctions. These
+                    updates improve stability and reliability.
+                  </p>
+                </div>
+                <div class="feature fade-in">
+                  <div class="feature-icon">
+                    <i class="fas fa-plus-circle"></i>
+                  </div>
+                  <h3 class="feature-title">Feature Updates</h3>
+                  <p class="card-text">
+                    Add new capabilities or significantly enhance existing ones.
+                    Often change how users interact with software.
+                  </p>
+                </div>
+              </div>
+
+              <div class="highlight-box fade-in">
+                <h3>Automatic vs. Manual Updates</h3>
+                <p>
+                  Modern software increasingly defaults to automatic updates,
+                  especially for security-related patches. While this improves
+                  security adoption rates, it can lead to unexpected changes and
+                  disruptions.
+                </p>
+              </div>
+
+              <div class="tabs">
+                <button
+                  class="tab-link active"
+                  onclick="openTab(event, 'auto')"
+                >
+                  Automatic Updates
+                </button>
+                <button class="tab-link" onclick="openTab(event, 'manual')">
+                  Manual Updates
+                </button>
+              </div>
+
+              <div id="auto" class="tab-content active">
+                <h3>Automatic Updates</h3>
+                <div class="icon-placeholder"><i class="fas fa-cogs"></i></div>
+                <ul>
+                  <li>Install without user intervention</li>
+                  <li>Ensure timely security protection</li>
+                  <li>May interrupt workflow at inconvenient times</li>
+                  <li>Often cannot be easily rolled back</li>
+                </ul>
+                <p>
+                  Windows 11 includes automatic updates by default, with
+                  security updates installing automatically to protect users.
+                </p>
+                <div class="citation">
+                  Source:
+                  <a
+                    href="https://www.maketecheasier.com/latest-windows-10-update-problems/"
+                    target="_blank"
+                    >Make Tech Easier, March 2025</a
+                  >
+                </div>
+              </div>
+
+              <div id="manual" class="tab-content">
+                <h3>Manual Updates</h3>
+                <div class="icon-placeholder">
+                  <i class="fas fa-user-cog"></i>
+                </div>
+                <ul>
+                  <li>Require user approval and action</li>
+                  <li>Allow scheduling during convenient times</li>
+                  <li>
+                    May be delayed or forgotten, increasing security risks
+                  </li>
+                  <li>Give users more control over their experience</li>
+                </ul>
+                <p>
+                  Research shows that psychological factors like knowledge,
+                  awareness, and prior experience significantly influence users'
+                  update decisions.
+                </p>
+                <div class="citation">
+                  Source:
+                  <a
+                    href="https://www.researchgate.net/publication/339760428_Update_now_or_later_Effects_of_experience_cost_and_risk_preference_on_update_decisions"
+                    target="_blank"
+                    >ResearchGate, 2020</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Update Cycle Page -->
+      <section id="update-cycle" class="page-content" style="display: none">
+        <div class="section">
+          <div class="container">
+            <div class="section-title fade-in">
+              <h2>The Modern Update Cycle</h2>
+              <p>How continuous deployment changes user experience</p>
+            </div>
+
+            <div class="content fade-in">
+              <p>
+                The software update cycle has accelerated dramatically in recent
+                years, shifting from infrequent major releases to continuous
+                deployment models. This change has profound implications for how
+                users experience and interact with technology.
+              </p>
+
+              <div class="icon-large-container">
+                <i class="fas fa-sync-alt"></i>
+              </div>
+
+              <div class="highlight-box fade-in">
+                <h3>Continuous Deployment Impact</h3>
+                <p>
+                  Modern software development embraces a "release early, release
+                  often" philosophy with several key characteristics:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Smaller, Incremental Changes:</strong> Features are
+                    added gradually rather than in large batches
+                  </li>
+                  <li>
+                    <strong>Rapid Feedback Cycles:</strong> Developers can
+                    quickly respond to user feedback
+                  </li>
+                  <li>
+                    <strong>Automated Testing and Deployment:</strong> Reducing
+                    human error in the update process
+                  </li>
+                  <li>
+                    <strong>Feature Flags:</strong> Allowing selective enabling
+                    of new features for specific users
+                  </li>
+                  <li>
+                    <strong>A/B Testing:</strong> Testing different versions
+                    with different user groups
+                  </li>
+                </ul>
+              </div>
+
+              <p>
+                While continuous deployment offers advantages for developers, it
+                can create challenges for users who must constantly adapt to
+                changing interfaces and functionality. The ideal update cycle
+                should balance rapid development with user experience
+                considerations.
+              </p>
+
+              <div class="citation">
+                Source:
+                <a
+                  href="https://www.sciencedirect.com/science/article/abs/pii/S0167923616000026"
+                  target="_blank"
+                  >ScienceDirect, "The role of software updates in information
+                  systems continuance," 2016</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Update Fatigue Page -->
+      <section id="update-fatigue" class="page-content" style="display: none">
+        <div class="section">
+          <div class="container">
+            <div class="section-title fade-in">
+              <h2>Update Fatigue</h2>
+              <p>The psychological impact of constant software changes</p>
+            </div>
+
+            <div class="content fade-in">
+              <p>
+                Update fatigue is a growing psychological phenomenon
+                characterized by user exhaustion, frustration, and disengagement
+                resulting from frequent software changes. As update cycles
+                accelerate across multiple platforms and applications, users are
+                increasingly overwhelmed by the constant need to adapt.
+              </p>
+
+              <div class="icon-large-container">
+                <i class="fas fa-tired"></i>
+              </div>
+
+              <div class="highlight-box fade-in">
+                <h3>Signs of Update Fatigue</h3>
+                <ul>
+                  <li>
+                    Deliberately postponing or ignoring update notifications
+                  </li>
+                  <li>Feeling anxious when seeing update prompts</li>
+                  <li>Decreased productivity following updates</li>
+                  <li>Frustration with relearning familiar tasks</li>
+                  <li>
+                    Declining engagement with frequently updated applications
+                  </li>
+                </ul>
+              </div>
+
+              <div class="cards-container">
+                <div class="card fade-in">
+                  <div class="card-icon"><i class="fas fa-brain"></i></div>
+                  <div class="card-content">
+                    <h3 class="card-title">Cognitive Load</h3>
+                    <p class="card-text">
+                      Each update requires mental resources to understand and
+                      adapt to. When updates are frequent, users experience
+                      cognitive overload as they continuously need to relearn
+                      interfaces and workflows.
+                    </p>
+                    <div class="citation">
+                      Source:
+                      <a
+                        href="https://telehealth.org/role-of-user-experience-in-technology-fatigue-or-zoom-fatigue-research/"
+                        target="_blank"
+                        >Telehealth.org, October 2023</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="card fade-in">
+                  <div class="card-icon">
+                    <i class="fas fa-business-time"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">Workflow Disruption</h3>
+                    <p class="card-text">
+                      Updates often interrupt users' productivity, both during
+                      installation and afterward as users navigate changed
+                      interfaces. This disruption can be particularly
+                      frustrating for professional users.
+                    </p>
+                    <div class="citation">
+                      Source:
+                      <a
+                        href="https://www.sciencedirect.com/science/article/abs/pii/S0167923616000026"
+                        target="_blank"
+                        >ScienceDirect, 2016</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="card fade-in">
+                  <div class="card-icon"><i class="fas fa-user-lock"></i></div>
+                  <div class="card-content">
+                    <h3 class="card-title">Loss of Control</h3>
+                    <p class="card-text">
+                      Automatic updates remove user agency, forcing changes
+                      without consent. This loss of control over one's digital
+                      environment can lead to resistance and negative attitudes.
+                    </p>
+                    <div class="citation">
+                      Source:
+                      <a
+                        href="https://www.researchgate.net/publication/278912570_A_study_of_users'_experiences_and_beliefs_about_software_update_messages"
+                        target="_blank"
+                        >ResearchGate, October 2015</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Case Studies Page -->
+      <section id="case-studies" class="page-content" style="display: none">
+        <div class="section">
+          <div class="container">
+            <div class="section-title fade-in">
+              <h2>Real-World Examples</h2>
+              <p>When software updates go wrong</p>
+            </div>
+
+            <div class="content fade-in">
+              <p>
+                While many software updates improve user experience, there have
+                been numerous high-profile cases where updates significantly
+                disrupted users' workflows, damaged trust, and created lasting
+                negative impressions.
+              </p>
+
+              <div class="case-studies-container">
+                <div class="case-study fade-in">
+                  <div class="case-icon"><i class="fab fa-windows"></i></div>
+                  <div class="case-content">
+                    <h3>Windows 11 Hardware Requirements</h3>
+                    <p>
+                      Microsoft's Windows 11 introduced strict hardware
+                      requirements that left many relatively recent computers
+                      unable to upgrade officially, creating confusion and
+                      frustration.
+                    </p>
+                    <div class="citation">
+                      Source:
+                      <a
+                        href="https://www.windowscentral.com/software-apps/windows-11/these-pcs-can-finally-upgrade-to-the-latest-version-of-windows-11"
+                        target="_blank"
+                        >Windows Central, April 2025</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="case-study fade-in">
+                  <div class="case-icon"><i class="fab fa-apple"></i></div>
+                  <div class="case-content">
+                    <h3>iOS 13 and macOS Catalina</h3>
+                    <p>
+                      Apple's simultaneous release of iOS 13 and macOS Catalina
+                      in 2019 was widely criticized for bugs and compatibility
+                      problems, damaging Apple's "it just works" reputation.
+                    </p>
+                    <div class="citation">
+                      Source:
+                      <a
+                        href="https://www.inc.com/jason-aten/apples-2-most-recent-software-updates-are-a-mess-its-a-real-problem-for-a-company-known-for-it-just-works.html"
+                        target="_blank"
+                        >Inc.com, January 2021</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="case-study fade-in">
+                  <div class="case-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </div>
+                  <div class="case-content">
+                    <h3>Windows 11 KB5053656 Update</h3>
+                    <p>
+                      The March 2025 Windows 11 Cumulative Update caused issues
+                      with the OpenSSH service and prevented installation on
+                      devices with certain Citrix components.
+                    </p>
+                    <div class="citation">
+                      Source:
+                      <a
+                        href="https://www.computerworld.com/article/1615662/windows-11-a-guide-to-the-updates.html"
+                        target="_blank"
+                        >Computerworld, April 2025</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="highlight-box fade-in">
+                <h3>Common Patterns in Problematic Updates</h3>
+                <ul>
+                  <li>
+                    <strong>Insufficient Testing:</strong> Updates rushed to
+                    release without adequate quality assurance
+                  </li>
+                  <li>
+                    <strong>Poor Communication:</strong> Vague or misleading
+                    descriptions of what changes will occur
+                  </li>
+                  <li>
+                    <strong>Forced Adoption:</strong> No option to delay or opt
+                    out of disruptive changes
+                  </li>
+                  <li>
+                    <strong>Workflow Disruption:</strong> Radical interface
+                    changes without transition periods
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Best Practices Page -->
+      <section id="best-practices" class="page-content" style="display: none">
+        <div class="section">
+          <div class="container">
+            <div class="section-title fade-in">
+              <h2>UX Best Practices</h2>
+              <p>Designing updates with users in mind</p>
+            </div>
+
+            <div class="content fade-in">
+              <p>
+                Creating a positive update experience requires careful attention
+                to user needs, expectations, and behaviors. These best practices
+                can help software providers balance necessary changes with user
+                experience considerations.
+              </p>
+
+              <div class="icon-large-container">
+                <i class="fas fa-users-cog"></i>
+              </div>
+
+              <div class="features">
+                <div class="feature fade-in">
+                  <div class="feature-icon">
+                    <i class="fas fa-comment-alt"></i>
+                  </div>
+                  <h3 class="feature-title">Clear Communication</h3>
+                  <p class="card-text">
+                    Provide transparent, jargon-free explanations of what an
+                    update contains and why it matters to users.
+                  </p>
+                </div>
+                <div class="feature fade-in">
+                  <div class="feature-icon">
+                    <i class="fas fa-calendar-alt"></i>
+                  </div>
+                  <h3 class="feature-title">Convenient Timing</h3>
+                  <p class="card-text">
+                    Allow users to schedule updates during low-activity periods.
+                    Avoid forcing updates during critical work hours.
+                  </p>
+                </div>
+                <div class="feature fade-in">
+                  <div class="feature-icon"><i class="fas fa-list-ul"></i></div>
+                  <h3 class="feature-title">Detailed Changelogs</h3>
+                  <p class="card-text">
+                    Provide comprehensive, user-friendly changelogs that
+                    highlight both major and minor changes by category and
+                    importance.
+                  </p>
+                </div>
+              </div>
+
+              <div class="highlight-box fade-in">
+                <h3>The Ideal Update Experience</h3>
+                <p>An optimal software update process should:</p>
+                <ul>
+                  <li>Be clearly communicated in advance</li>
+                  <li>Happen at a time convenient for the user</li>
+                  <li>Provide an easy way to revert if problems occur</li>
+                  <li>Include comprehensive documentation of changes</li>
+                  <li>Respect user workflows and existing data</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- User Control Page -->
+      <section id="user-control" class="page-content" style="display: none">
+        <div class="section">
+          <div class="container">
+            <div class="section-title fade-in">
+              <h2>Empowering Users</h2>
+              <p>Giving users more control over their software experience</p>
+            </div>
+
+            <div class="content fade-in">
+              <p>
+                While users can't entirely avoid updates, there are strategies
+                to manage update fatigue and maintain control over one's digital
+                environment.
+              </p>
+
+              <div class="icon-large-container">
+                <i class="fas fa-user-shield"></i>
+              </div>
+
+              <div class="cards-container">
+                <div class="card fade-in">
+                  <div class="card-icon"><i class="fas fa-clock"></i></div>
+                  <div class="card-content">
+                    <h3 class="card-title">Schedule Update Times</h3>
+                    <p class="card-text">
+                      When possible, schedule updates during low-productivity
+                      periods like overnight or during lunch breaks. Most modern
+                      operating systems allow this level of control.
+                    </p>
+                  </div>
+                </div>
+                <div class="card fade-in">
+                  <div class="card-icon">
+                    <i class="fas fa-clipboard-check"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">Update Triage</h3>
+                    <p class="card-text">
+                      Prioritize security updates while delaying optional
+                      feature updates. Learn to distinguish between critical and
+                      optional updates in your software settings.
+                    </p>
+                  </div>
+                </div>
+                <div class="card fade-in">
+                  <div class="card-icon">
+                    <i class="fas fa-comment-dots"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="card-title">Feedback Channels</h3>
+                    <p class="card-text">
+                      Provide constructive feedback to developers about
+                      disruptive updates. Many companies adjust their practices
+                      based on user input and pain points.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="highlight-box fade-in">
+                <h3>What Users Want</h3>
+                <p>Research shows that users prefer updates that:</p>
+                <ul>
+                  <li>Respect their time and current workflows</li>
+                  <li>Provide clear benefits that outweigh the disruption</li>
+                  <li>Include intuitive education about new features</li>
+                  <li>Allow for customization of the update experience</li>
+                  <li>Offer fallback options if issues arise</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Page -->
+      <section id="about" class="page-content" style="display: none">
+        <div class="section">
+          <div class="container">
+            <div class="section-title fade-in">
+              <h2>About This Project</h2>
+              <p>Created by Jawad Ali</p>
+            </div>
+
+            <div class="content fade-in">
+              <p>
+                This interactive website was created as part of an English class
+                project to explore the impact of software updates on user
+                experience. It examines how the increasing frequency and
+                intrusiveness of updates affect productivity, satisfaction, and
+                digital well-being.
+              </p>
+
+              <div class="highlight-box fade-in">
+                <h3>Project Goals</h3>
+                <ul>
+                  <li>
+                    Analyze the psychological impact of frequent software
+                    changes
+                  </li>
+                  <li>Document real-world examples of problematic updates</li>
+                  <li>
+                    Explore best practices for user-centered update design
+                  </li>
+                  <li>
+                    Suggest strategies for both developers and users to improve
+                    the update experience
+                  </li>
+                </ul>
+              </div>
+
+              <p>
+                The data and examples presented in this project are based on
+                recent research, news reports, and industry publications. All
+                sources are cited appropriately.
+              </p>
+
+              <p>
+                For questions or comments about this project, please contact:
+                jfrenzii@iastate.edu
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-logo">Update<span>Wise</span></div>
+        <p>
+          A research project on the impact of software updates on user
+          experience
+        </p>
+        <ul class="footer-links">
+          <li class="footer-link">
+            <a href="#" onclick="loadPage('home')">Home</a>
+          </li>
+          <li class="footer-link">
+            <a href="#" onclick="loadPage('update-types')">Types of Updates</a>
+          </li>
+          <li class="footer-link">
+            <a href="#" onclick="loadPage('update-fatigue')">Update Fatigue</a>
+          </li>
+          <li class="footer-link">
+            <a href="#" onclick="loadPage('best-practices')">Best Practices</a>
+          </li>
+          <li class="footer-link">
+            <a href="#" onclick="loadPage('about')">About</a>
+          </li>
+        </ul>
+        <p class="copyright">© 2025 Jawad Ali | English Class Project</p>
+      </div>
+    </footer>
+
+    <!-- Survey Modal -->
+    <div id="survey-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeSurveyModal()">&times;</span>
+        <div class="modal-header">
+          <h2 class="modal-title">Software Update Experience Survey</h2>
+        </div>
+        <div class="modal-body">
+          <p>
+            We're researching how software updates affect users. Your responses
+            will help us understand the impact of updates on productivity and
+            well-being.
+          </p>
+          <form id="survey-form">
+            <div class="form-group">
+              <label class="form-label"
+                >How often do you experience frustration with software
+                updates?</label
+              >
+              <select class="form-control">
+                <option>Very frequently</option>
+                <option>Somewhat frequently</option>
+                <option>Occasionally</option>
+                <option>Rarely</option>
+                <option>Never</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label"
+                >What aspect of software updates bothers you the most?</label
+              >
+              <select class="form-control">
+                <option>Interruption of workflow</option>
+                <option>Having to relearn interfaces</option>
+                <option>Loss of features I use</option>
+                <option>Unexpected behavior changes</option>
+                <option>Slow update process</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label"
+                >Any other thoughts about software updates?</label
+              >
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary" onclick="submitSurvey()">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
